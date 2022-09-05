@@ -1,0 +1,5 @@
+- shell:
+    - command: npm install --global $(cat shell/npm | tr "\n" " ")
+      description: Install global npm dependencies
+      stdin: true
+      stdout: true
