@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    # Shell stuff
+    ~/.aliases: shell/aliases
+    ~/.functions: shell/functions
+    ~/.zshrc: shell/zshrc
+    ~/.oh-my-zsh/custom: shell/oh-my-zsh/custom
+    ~/.p10k.zsh: shell/p10k.zsh
+    ~/.tmux.conf: shell/tmux.conf
+
+- create:
+    - ~/workspace/dojo
+    - ~/workspace/sandbox
+    - ~/workspace/work
+# - shell:
+# - [git submodule update --init --recursive, Installing submodules]
