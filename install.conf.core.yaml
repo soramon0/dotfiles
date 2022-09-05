@@ -20,5 +20,3 @@
     - ~/workspace/work
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-# Install vscode extensions
-# - code --list-extensions | xargs -L 1 echo code --install-extension | zsh
