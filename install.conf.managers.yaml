@@ -1,0 +1,13 @@
+- shell:
+    - command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+      description: Install nvm
+      stdin: true
+      stdout: true
+    - command: . ~/.nvm/nvm.sh && nvm install --lts
+      description: Install node LTS
+      stdin: true
+      stdout: true
+    - command: . ~/.nvm/nvm.sh && nvm use node
+      description: Use latest node version
+      stdin: true
+      stdout: true
