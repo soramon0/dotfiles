@@ -12,6 +12,7 @@
     ~/.oh-my-zsh/custom: shell/oh-my-zsh/custom
     ~/.p10k.zsh: shell/p10k.zsh
     ~/.tmux.conf: shell/tmux.conf
+    ~/.gitconfig: shell/gitconfig
 
 - create:
     - ~/workspace/dojo
