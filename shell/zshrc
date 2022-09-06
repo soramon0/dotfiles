@@ -112,16 +112,18 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Golang
-export PATH=$PATH:/usr/local/go/bin
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#PATH
 # Android Studio/React Native setup
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+# Add local user installed bins
+export PATH=$PATH:$HOME/.local/bin
 
 # Tmux hook - Automatic rename after changing dir
 tmux-window-name() {
@@ -132,3 +134,4 @@ add-zsh-hook chpwd tmux-window-name
 
 # Syntax highlighting for man pages using bat
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+
