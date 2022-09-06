@@ -1,4 +1,8 @@
 - shell:
+    - command: sudo apt update
+      description: Update cache
+      stdin: true
+      stdout: true
     - command: sudo apt install -y build-essential apt-transport-https curl wget gcc ruby ruby-dev net-tools neovim jq httpie sshpass bsdgames speedtest-cli bat python3-pip tmux zsh
       description: Install OS tools
       stdin: true
