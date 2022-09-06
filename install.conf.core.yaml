@@ -1,5 +1,6 @@
 - defaults:
     link:
+      force: true
       relink: true
 
 - clean: ["~"]
@@ -20,3 +21,4 @@
     - ~/workspace/work
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - source ~/.zshrc
