@@ -11,6 +11,10 @@
       description: Install oh-my-zsh
       stdin: true
       stdout: true
+    - command: echo $SHELL | grep "zsh" || sudo chsh -s /bin/zsh
+      description: Change default shell to zsh
+      stdin: true
+      stdout: true
     - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
       description: Install tmux plugin manager
       stdin: true
