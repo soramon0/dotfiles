@@ -1,23 +1,23 @@
 - clean: ["~"]
 
 - shell:
-    - command: ./install -c install.conf.tools.yaml
+    - command: ./install -c conf/tools.yaml
       description: Install OS tools
       stdin: true
       stdout: true
-    - command: ./install -c install.conf.core.yaml
+    - command: ./install -c conf/core.yaml
       description: Install core dotfiles
       stdin: true
       stdout: true
-    - command: ./install -c install.conf.managers.yaml
+    - command: ./install -c conf/managers.yaml
       description: Install mangers dotfiles
       stdin: true
       stdout: true
-    - command: ./install -c install.conf.npm.yaml
+    - command: ./install -c conf/npm.yaml
       description: Install npm dotfiles
       stdin: true
       stdout: true
-    - command: ./install -c install.conf.vscode.yaml
+    - command: ./install -c conf/vscode.yaml
       description: Install vscode dotfiles
       stdin: true
       stdout: true

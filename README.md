@@ -9,7 +9,7 @@
 Then to install individual configs, for example VSCode plugins, use
 
 ```zsh
-./install -c install.conf.vscode.yaml
+./install -c conf/vscode.yaml
 ```
 
-_Note: to install all conf use `./install -c install.conf.yaml`_
+_Note: to install all conf use `./install -c conf/all.yaml`_
