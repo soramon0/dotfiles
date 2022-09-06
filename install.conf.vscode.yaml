@@ -1,4 +1,8 @@
 - shell:
+    - command: which code || wget -O vscode "https://go.microsoft.com/fwlink/?LinkID=760868" && sudo apt install ./vscode.deb && rm ./vscode.deb
+      description: Install vscode
+      stdin: true
+      stdout: true
     - command: cat applications/vscode-extensions | while read line; do code --force --install-extension $line; done
       description: Install vscode dependencies
       stdin: true
