@@ -1,5 +1,6 @@
 - defaults:
     link:
+      create: true
       force: true
       relink: true
 
@@ -9,6 +10,7 @@
     # Shell stuff
     ~/.aliases: shell/aliases
     ~/.functions: shell/functions
+    ~/.config/nvim/init.vim: shell/vimrc
     ~/.zshrc: shell/zshrc
     ~/.oh-my-zsh/custom: shell/oh-my-zsh/custom
     ~/.p10k.zsh: shell/p10k.zsh
