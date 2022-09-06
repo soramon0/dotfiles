@@ -1,5 +1,5 @@
 - shell:
-    - command: which code || wget -O vscode "https://go.microsoft.com/fwlink/?LinkID=760868" && sudo apt install ./vscode.deb && rm ./vscode.deb
+    - command: which code || wget -O vscode.deb "https://go.microsoft.com/fwlink/?LinkID=760868" && sudo apt install ./vscode.deb && rm ./vscode.deb
       description: Install vscode
       stdin: true
       stdout: true
