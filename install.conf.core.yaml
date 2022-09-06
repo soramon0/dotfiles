@@ -16,9 +16,9 @@
     ~/.gitconfig: shell/gitconfig
 
 - create:
-    - ~/workspace/dojo
-    - ~/workspace/sandbox
-    - ~/workspace/work
+    - ~/p/dojo
+    - ~/p/sandbox
+    - ~/p/work
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - source ~/.zshrc
