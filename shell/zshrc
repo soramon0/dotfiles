@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# Set personal aliases, overriding those provided by 17oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
@@ -119,6 +119,9 @@ source ~/.aliases
 
 #PATH
 # Android Studio/React Native setup
+export JAVA_11=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_17=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=$JAVA_17
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
