@@ -116,6 +116,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.aliases
+source ~/.functions
 
 #PATH
 # Android Studio/React Native setup
@@ -129,13 +130,6 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:/usr/local/go/bin
 # Add local user installed bins
 export PATH=$PATH:$HOME/.local/bin
-
-# Tmux hook - Automatic rename after changing dir
-tmux-window-name() {
-	$TMUX_PLUGIN_MANAGER_PATH/tmux-window-name/scripts/rename_session_windows.py
-}
-
-add-zsh-hook chpwd tmux-window-name
 
 # Syntax highlighting for man pages using bat
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
