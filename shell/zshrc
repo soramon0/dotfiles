@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(git tmux aws npm yarn)
 
 ZSH_TMUX_AUTOSTART_ONCE=true
 
@@ -135,4 +135,8 @@ export PATH=$PATH:$HOME/.local/bin
 
 # Syntax highlighting for man pages using bat
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+
+# default AWS profile
+export AWS_PROFILE=personal
+
 

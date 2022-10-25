@@ -3,3 +3,5 @@
 	name = soramon0
 [init]
 	defaultBranch = main
+[core]
+	editor = vim
