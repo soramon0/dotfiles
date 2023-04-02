@@ -6,3 +6,14 @@ tmux-window-name() {
 # add-zsh-hook chpwd tmux-window-name
 
 
+
+mtouch() {
+	if [ $# -lt 1 ]; then
+    echo "Error: Argument missing, please enter the filename with fullpath.";
+	else 
+		for file_path_info in "$@"; do
+			mkdir -p -- "$(dirname -- "$file_path_info")"
+			touch -- "$file_path_info"
+		done
+	fi
+}
