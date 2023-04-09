@@ -10,7 +10,8 @@
     # Shell stuff
     ~/.aliases: shell/aliases
     ~/.functions: shell/functions
-    ~/.config/nvim/init.vim: shell/vimrc
+    # ~/.config/nvim/init.vim: shell/vimrc
+    ~/.config/nvim/init.lua: shell/init.lua
     ~/.zshrc: shell/zshrc
     ~/.oh-my-zsh/custom: shell/oh-my-zsh/custom
     ~/.p10k.zsh: shell/p10k.zsh
@@ -18,9 +19,9 @@
     ~/.gitconfig: shell/gitconfig
 
 - create:
-    - ~/p/dojo
-    - ~/p/sandbox
-    - ~/p/work
+    - ~/w/doju
+    - ~/w/sandbox
+    - ~/w/work
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - source ~/.zshrc

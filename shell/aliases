@@ -1,1 +1,5 @@
 alias docker-compose="docker compose"
+alias python="python3"
+alias py="python3"
+alias vim="nvim"
+alias v="nvim"
