@@ -242,6 +242,8 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 
 -- Remap escape key
 vim.keymap.set('i', 'jk', "<ESC>", { noremap = true })
+-- Remap explorer
+vim.keymap.set('n', '<leader>pv', vim.cmd.Explore)
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
