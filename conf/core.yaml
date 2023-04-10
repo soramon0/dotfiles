@@ -11,7 +11,7 @@
     ~/.aliases: shell/aliases
     ~/.functions: shell/functions
     # ~/.config/nvim/init.vim: shell/vimrc
-    ~/.config/nvim/init.lua: shell/init.lua
+    ~/.config/nvim: shell/nvim
     ~/.zshrc: shell/zshrc
     ~/.oh-my-zsh/custom: shell/oh-my-zsh/custom
     ~/.p10k.zsh: shell/p10k.zsh
