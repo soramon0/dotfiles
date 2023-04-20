@@ -141,3 +141,11 @@ export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 export AWS_PROFILE=default
 
 
+
+# pnpm
+export PNPM_HOME="/home/sora/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
