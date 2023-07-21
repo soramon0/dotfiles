@@ -10,6 +10,7 @@
     # Shell stuff
     ~/.aliases: shell/aliases
     ~/.functions: shell/functions
+    ~/.local/bin/tmux-sessionizer: bin/scripts/tmux-sessionizer
     # ~/.config/nvim/init.vim: shell/vimrc
     ~/.config/nvim: shell/nvim
     ~/.zshrc: shell/zshrc

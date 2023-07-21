@@ -3,7 +3,7 @@
       description: Update cache
       stdin: true
       stdout: true
-    - command: sudo apt install -y build-essential apt-transport-https curl wget gcc ruby ruby-dev net-tools jq httpie sshpass ripgrep bsdgames speedtest-cli bat python3-pip tmux zsh
+    - command: sudo apt install -y build-essential apt-transport-https curl wget gcc ruby ruby-dev net-tools jq httpie sshpass fzf ripgrep bsdgames speedtest-cli bat python3-pip tmux zsh
       description: Install OS tools
       stdin: true
       stdout: true
@@ -27,3 +27,7 @@
       description: Install neovim using snap
       stdin: true
       stdout: true
+        #- command: install neovim packer plugin manager
+        #description: git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+        #stdin: true
+        #stdout: true
