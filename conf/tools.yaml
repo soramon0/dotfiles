@@ -3,7 +3,7 @@
       description: Update cache
       stdin: true
       stdout: true
-    - command: sudo apt install -y build-essential apt-transport-https curl wget gcc ruby ruby-dev net-tools neovim jq httpie sshpass bsdgames speedtest-cli bat python3-pip tmux zsh
+    - command: sudo apt install -y build-essential apt-transport-https curl wget gcc ruby ruby-dev net-tools jq httpie sshpass ripgrep bsdgames speedtest-cli bat python3-pip tmux zsh
       description: Install OS tools
       stdin: true
       stdout: true
@@ -21,5 +21,9 @@
       stdout: true
     - command: tmux new-session -d && tmux source ./shell/tmux.conf && tmux kill-server
       description: Reload tmux env
+      stdin: true
+      stdout: true
+    - command: sudo snap install --beta nvim --classic
+      description: Install neovim using snap
       stdin: true
       stdout: true
