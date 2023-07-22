@@ -2,7 +2,6 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
-
 -- (Optional) Configure lua language server for neovim
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
@@ -41,8 +40,22 @@ lsp.set_preferences({
 	}
 })
 
+local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
+local lsp_format_on_save = function(bufnr)
+  vim.api.nvim_clear_autocmds({group = augroup, buffer = bufnr})
+  vim.api.nvim_create_autocmd('BufWritePre', {
+    group = augroup,
+    buffer = bufnr,
+    callback = function()
+      vim.lsp.buf.format()
+    end,
+  })
+end
+
+
 lsp.on_attach(function(client, bufnr)
 	local opts = {buffer = bufnr, remap = false}
+  lsp_format_on_save(bufnr)
 
 	vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 	vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
@@ -55,6 +68,32 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
 	vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
+
+
+--local null_ls = require("null-ls")
+--local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+
+--null_ls.setup({
+--  sources = {
+--    null_ls.builtins.formatting.gofmt,
+--    null_ls.builtins.formatting.goimports,
+--  },
+--  on_attach = function (client, bufnr)
+--   if client.supports_method("textDocument/formatting") then
+--      vim.api.nvim_clear_autocmds({
+--        group = augroup,
+--        buffer = bufnr,
+--      })
+--      vim.api.nvim_create_autocmd("BufWritePre", {
+--        group = augroup,
+--        buffer = bufnr,
+--        callback = function ()
+--          vim.lsp.buf.format({bufnr = bufnr})
+--        end,
+--      })
+--    end
+--  end,
+--})
 
 lsp.setup()
 
