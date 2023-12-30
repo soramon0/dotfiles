@@ -133,14 +133,14 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 # Add local user installed bins
 export PATH=$PATH:$HOME/.local/bin
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
 
 # Syntax highlighting for man pages using bat
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 
 # default AWS profile
 export AWS_PROFILE=default
-
-
 
 # pnpm
 export PNPM_HOME="/home/sora/.local/share/pnpm"
