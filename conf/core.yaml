@@ -12,7 +12,7 @@
     ~/.functions: shell/functions
     ~/.local/bin/tmux-sessionizer: bin/scripts/tmux-sessionizer
     # ~/.config/nvim/init.vim: shell/vimrc
-    ~/.config/nvim: shell/nvim
+    ~/.config/nvim/lua/custom: shell/nvim/lua/custom
     ~/.zshrc: shell/zshrc
     ~/.oh-my-zsh/custom: shell/oh-my-zsh/custom
     ~/.p10k.zsh: shell/p10k.zsh

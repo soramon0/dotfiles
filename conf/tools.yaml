@@ -27,7 +27,7 @@
       description: Install neovim using snap
       stdin: true
       stdout: true
-        #- command: install neovim packer plugin manager
-        #description: git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-        #stdin: true
-        #stdout: true
+    - command: rm -rf ~/.config/nvim && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+      description: Install NvChad
+      stdin: true
+      stdout: true
