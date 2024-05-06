@@ -7,14 +7,14 @@
       description: Install OS tools
       stdin: true
       stdout: true
-    - command: rm -rf ~/.oh-my-zsh ~/.zshrc && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-      description: Install oh-my-zsh
-      stdin: true
-      stdout: true
-    - command: echo $SHELL | grep "zsh" || sudo chsh -s /bin/zsh
-      description: Change default shell to zsh
-      stdin: true
-      stdout: true
+    # - command: rm -rf ~/.oh-my-zsh ~/.zshrc && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+    #   description: Install oh-my-zsh
+    #   stdin: true
+    #   stdout: true
+    # - command: echo $SHELL | grep "zsh" || sudo chsh -s /bin/zsh
+    #   description: Change default shell to zsh
+    #   stdin: true
+    #   stdout: true
     - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
       description: Install tmux plugin manager
       stdin: true
@@ -23,11 +23,11 @@
       description: Reload tmux env
       stdin: true
       stdout: true
-    - command: sudo snap install --beta nvim --classic
-      description: Install neovim using snap
-      stdin: true
-      stdout: true
-    - command: rm -rf ~/.config/nvim && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-      description: Install NvChad
-      stdin: true
-      stdout: true
+    # - command: sudo snap install --beta nvim --classic
+    #   description: Install neovim using snap
+    #   stdin: true
+    #   stdout: true
+    # - command: rm -rf ~/.config/nvim && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+    #   description: Install NvChad
+    #   stdin: true
+    #   stdout: true
