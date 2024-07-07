@@ -22,7 +22,9 @@
 - create:
     - ~/w/doju
     - ~/w/sandbox
-    - ~/w/work
+    - ~/w/projects
+    - ~/w/projects/me
+    - ~/w/projects/work
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - source ~/.zshrc

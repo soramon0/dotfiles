@@ -135,6 +135,10 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.local/bin
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin/nvim/bin
+
+export WORK=~/w/projects/work
+export ME=~/w/projects/me
 
 # default AWS profile
 export AWS_PROFILE=default

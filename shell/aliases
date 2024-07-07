@@ -1,6 +1,7 @@
-alias docker-compose="docker compose"
+# alias docker-compose="docker compose"
 alias python="python3"
 alias py="python3"
 alias vim="nvim"
 alias v="nvim"
 alias c="code"
+alias bfg="java -jar /home/sora/.local/bin/bfg-1.14.0.jar"
