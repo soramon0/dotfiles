@@ -3,7 +3,7 @@
       description: Update cache
       stdin: true
       stdout: true
-    - command: sudo apt install -y build-essential apt-transport-https curl wget gcc ruby ruby-dev net-tools jq httpie sshpass fzf ripgrep bsdgames speedtest-cli bat python3-pip tmux zsh
+    - command: sudo apt install -y build-essential apt-transport-https curl wget gcc ruby ruby-dev net-tools jq httpie sshpass fzf ripgrep speedtest-cli bat python3-pip tmux zsh
       description: Install OS tools
       stdin: true
       stdout: true
