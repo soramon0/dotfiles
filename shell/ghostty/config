@@ -1,0 +1,16 @@
+keybind = alt+h=goto_split:left
+keybind = alt+j=goto_split:bottom
+keybind = alt+k=goto_split:top
+keybind = alt+l=goto_split:right
+
+keybind = ctrl+alt+h=new_split:left
+keybind = ctrl+alt+j=new_split:down
+keybind = ctrl+alt+k=new_split:up
+keybind = ctrl+alt+l=new_split:right
+
+theme = Rose Pine
+background-opacity = 0.85
+gtk-titlebar = false
+quit-after-last-window-closed = true
+quit-after-last-window-closed-delay = 5m
+
